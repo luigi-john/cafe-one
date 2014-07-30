@@ -1,163 +1,223 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>CAFE-ONE</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="bower_components/onepage-scroll/onepage-scroll.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
+    <style type="text/css">
+    .main section.page1 {
+        background: url('images/header.jpg');
+    }
+    .main section.page5 {
+        background: url('images/footer.jpg');
+    }
+    .main section.page4 {
+        background: url('images/trusted_clients.jpg');
+    }
+    .phone-image {
+        padding-top: 19%;
+        padding-left: 16%;
+    }
+    .text-header {
+        padding-top: 15%;
+        color: #fff!important;
+    }
+    .text-header h1 {
+        color: #fff!important;
+        font-size: 4.5em;
+    }
+    .text-header p {
+        font-size: 1.5em;
+        font-style: italic;
+    }
+    .img-responsive {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main section.page3 {
+        background-color: #ecf0f1;
+    }
+    .full-width {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-2c {
+        border-radius: 5px;
+    }
+    .btn-2c:focus {
+        background: #e67e22!important;
+    }
+    .btn-2c:hover {
+        background: #e67e22;
+        box-shadow: 0px 4px #c05800;
+        top: 2px;
+    }
+    .btn-2 {
+        background: #e67e22;
+        color: #fff;
+        box-shadow: 0 6px #c05800;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .btn {
+        border: none;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background: none;
+        cursor: pointer;
+        padding: 25px 80px;
+        display: inline-block;
+        margin: 15px 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    </style>
+</head>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+<body>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
+    <div class="main">
+        <section class="page1">
+            <div class="row">
+                <div class="large-6 medium-6 small-12 left">
+                    <div class="show-for-medium-up">
+                        <img class="phone-image img-responsive" src="images/phone.png" />
+                    </div>
+                    <div class="hide-for-medium-up center">
+                        <img class="img-responsive phone-image" src="images/phone-small.png" />
+                    </div>
                 </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
+                <div class="large-6 medium-6 small-12 right text-header">
+                    <h1>CAFE-ONE</h1>
+                    <p>Frankfurter ribeye bacon pork loin, beef brisket turkey. Meatball tenderloin boudin ham pork belly strip steak pork</p>
+                    <button class="button large radius btn-2 btn-2c">Register</button>
+                    <button class="button large radius btn-2 btn-2c">Login</button>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
+        </section>
+        <section class="page2">
+            <div class="row" style="margin-top:150px;">
+                <div class="large-6 medium-6 small-12 left">
+                    <h1>What is this all about?</h1>
+                    <p>Chuck shank chicken bresaola drumstick tongue flank swine shoulder sausage prosciutto kevin ham hock beef ribs sirloin. Fatback tenderloin ground round salami meatball. Andouille rump doner, chuck short loin ham prosciutto strip steak.</p>
+                    <button class="button large radius btn-2 btn-2c">Read More</button>
+                </div>
+                <div class="large-6 medium-6 small-12 right">
+                    <img class="img-responsive" src="images/video.jpg" />
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
+        </section>
+        <section class="page3 sp-slideshow">
+            <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+            <label for="button-1" class="button-label-1"></label>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
+            <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+            <label for="button-2" class="button-label-2"></label>
+
+            <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+            <label for="button-3" class="button-label-3"></label>
+
+            <input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+            <label for="button-4" class="button-label-4"></label>
+
+            <input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+            <label for="button-5" class="button-label-5"></label>
+
+            <label for="button-1" class="sp-arrow sp-a1"></label>
+            <label for="button-2" class="sp-arrow sp-a2"></label>
+            <label for="button-3" class="sp-arrow sp-a3"></label>
+            <label for="button-4" class="sp-arrow sp-a4"></label>
+            <label for="button-5" class="sp-arrow sp-a5"></label>
+
+            <div class="row full-width sp-content" style="padding-top:50px;">
+                <div class="sp-parallax-bg"></div>
+                <h1 style="text-align:center;color:white;">BUSINESS INFOGRAPHICS</h1>
+                <ul class="sp-slider clearfix">
+                    <li>
+                        <img src="images/image1.png" alt="image01" />
+                    </li>
+                    <li>
+                        <img src="images/image2.png" alt="image02" />
+                    </li>
+                    <li>
+                        <img src="images/image3.png" alt="image03" />
+                    </li>
+                    <li>
+                        <img src="images/image4.png" alt="image04" />
+                    </li>
+                    <li>
+                        <img src="images/image5.png" alt="image05" />
+                    </li>
+                </ul>
+            </div>
+            <!-- sp-content -->
+
+
+        </section>
+        <section class="page4">
+            <div class="row" style="padding-top:50px;">
+                <h1 style="text-align:center;">OUR TRUSTED CLIENTS</h1>
+            </div>
+        </section>
+        <section class="page5">
+            <div class="row full-width" style="margin-top:110px;">
+                <div class="small-4 medium-4 large-4 columns">
+                    <h2 style="text-align:center; color:#fff">FOLLOW US</h2>
+                    <img style="margin-left:100px;margin-top:30px;" src="images/social.png" />
+                </div>
+                <div class="small-4 medium-4 large-4 columns">
+                    <h2 style="text-align:center; color:#fff">CONTACT US</h2>
+                    <ul class="no-bullet" style="margin-left:100px;margin-top:30px;color:#fff">
+                        <li>PHONE:
+                            <ul>
+                                <li>+639123456789</li>
+                            </ul>
+                        </li>
+                        <li>EMAIL:
+                            <ul>
+                                <li><a href="">mail@example.com</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="small-4 medium-4 large-4 columns">
+                    <h3 style="text-align:center; color:#fff">SUBSCRIBE TO OUR NEWSLETTER</h3>
+                    <div class="row collapse">
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="Enter Email">
+                        </div>
+                        <div class="small-3 columns">
+                            <a href="#" class="button postfix">SUBSCRIBE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/onepage-scroll/jquery.onepage-scroll.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-  </body>
+</body>
+
 </html>
